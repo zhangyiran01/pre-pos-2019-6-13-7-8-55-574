@@ -2,14 +2,14 @@
 
 function collectSameElements(collectionA, objectB) {
   var c = new Array(); 
-    var collectionB=objectB.value;
+    let collectionC=objectB.value;
     for(var i = 0; i<collectionA.length ; i++)
     {
-      for(var j = 0; j<collectionB.length ; j++)
+      for(var j = 0; j<collectionC.length ; j++)
       {
-        if (collectionA[i].key == collectionB[j]) //取得对象数组中对象的key值
+        if (collectionA[i].key == collectionC[j]) 
         {
-          c.push(collectionB[j]);
+          c.push(collectionC[j]);
           break;
         }
       }
@@ -17,4 +17,3 @@ function collectSameElements(collectionA, objectB) {
     return c;
 
 }
-
