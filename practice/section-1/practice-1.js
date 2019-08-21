@@ -2,17 +2,17 @@
 
 function collectSameElements(collectionA, collectionB) {
   var c = new Array();
-for(var i = 0; i<collectionA.length ; i++)
-{
-  for(var j = 0; j<collectionB.length ; j++)
+  for(var i = 0; i<collectionA.length ; i++)
   {
-    if (collectionA[i] == collectionB[j])
+    for(var j = 0; j<collectionB.length ; j++)
     {
-      c.push(collectionA[i]);
-        break;
+      if (collectionA[i] == collectionB[j])
+      {
+        c.push(collectionA[i]);
+          break;
+      }
     }
   }
-}
-  return c;
-}
-
+    return c;
+  }
+  
